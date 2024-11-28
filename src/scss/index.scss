@@ -1,0 +1,112 @@
+
+@use './settings' as *;
+
+/**/
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem,
+  7: 0.8rem,
+  8: 0.7rem
+);
+
+/*    Buttons
+-----------------------*/
+$input-font-family: 'Roboto Mono';
+
+/*    NavBar
+-----------------------------------------------------------*/
+$navbar-nav-link-padding-x:         3rem;
+
+$navbar-dark-color:                 $onSecondary;
+$navbar-dark-hover-color:           $onPrimary;
+$navbar-dark-active-color:          $onPrimary;
+
+$custom-position-values: (
+  m20vh: -20vh,
+  nem-2: -2em,
+  nem-3: -3em,
+);
+
+$spacer: 1rem;
+$custom-spacers: (
+   6: $spacer * 5,
+   7: $spacer * 8,
+   8: $spacer * 11,
+);
+   
+// @use "bootstrap/scss/functions" as *;
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+
+   
+$position-values: map-merge($position-values, $custom-position-values);
+$spacers: map-merge($spacers, $custom-spacers);
+
+@import "bootstrap/scss/utilities";
+
+$utilities: map-merge(
+   $utilities,
+   (
+      "top": map-merge(
+         map-get($utilities, "top"),
+         ( responsive: true ),
+      ),
+      "height": (
+         property: height,
+         class: h,
+         responsive: true,
+         values: (
+            0: 0,
+            25: 25%,
+            50: 50%,
+            75: 75%,
+            100: 100%,
+            auto: auto
+         )
+      ),
+      "font-family": (
+         property: font-family,
+         class: font,
+         values: (body: 'Roboto Mono')
+      ),
+      "font-size": (
+         rfs: true,
+         property: font-size,
+         class: fs,
+         values: $display-font-sizes
+      ),
+   )
+);
+
+@import 'bootstrap/scss/bootstrap';
+
+
+/*
+** Modal
+*/
+$modal-content-color: $primary;
+
+/*
+** Input check
+*/
+
+$form-check-input-checked-border-color:   $primaryVariant;
+
+
+
+/*    -  home
+-----------------------------------------------------------*/
+
+body {
+   background-color: $primary;
+   overflow-x: hidden;
+}

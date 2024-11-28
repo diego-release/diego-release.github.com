@@ -1,0 +1,13 @@
+.text-truncate-multiline {
+   overflow: hidden;
+   -webkit-box-orient: vertical;
+   display: block;
+   display: -webkit-box;
+   text-overflow: ellipsis;
+   -webkit-line-clamp: 3;
+}
+
+
+/*    -  home
+-----------------------------------------------------------*/
+

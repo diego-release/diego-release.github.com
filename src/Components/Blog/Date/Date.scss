@@ -1,0 +1,30 @@
+
+/*Neon*/
+.app-neon a {
+   text-align: center;
+   font-size: 4em;
+   margin-bottom: 0;
+   margin-top: 0;
+   line-height: 1;
+   text-decoration: none;
+   color: #fff;
+ }
+ 
+ .app-neon a:nth-child(1) {
+   animation: neon5 1.5s ease-in-out infinite alternate;
+   &:hover{
+     color: #fff;
+   }
+ }
+ /*glow*/
+ @keyframes neon5 {
+   from {
+     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900,
+       0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+   }
+   to {
+     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9900,
+       0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
+   }
+ }
+ 

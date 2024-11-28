@@ -1,0 +1,21 @@
+$font-family-sans-serif:     'Aldrich', sans-serif !important;
+
+$enable-negative-margins: true;
+
+$primary:            #0B0200;
+$primaryVariant:     #af9c6e;
+$secondary:          #DCC99C;
+$secondaryVariant:   #FFFFFF;
+
+$onPrimary:          $secondary;
+$onSecondary:        #FFFFFF;
+
+$theme-colors: (
+  "primary":            $primary,
+  "primary-variant":    $primaryVariant,
+  "secondary":          $secondary,
+  "secondary-variant":  $secondaryVariant,
+  "on-primary":         $onPrimary,
+  "on-secondary":       $onSecondary,
+  "dark":               #495057,
+);
