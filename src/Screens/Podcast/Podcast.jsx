@@ -46,7 +46,7 @@ export const ScreenPodcast = () => {
       "🔴Red... ",
    ];
 
-   const usersOne = ["diego_release", "starboy69", ""];
+   const usersOne = ["diego_release", "starboy69"];
 
    const usersTwo = ["diego_release"];
 

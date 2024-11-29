@@ -67,6 +67,7 @@ export const Episode = ({ stateEpisode = true, title, comments, users }) => {
                                  <ul className="marquee__content">
                                     {comments.map((comment) => {
                                        return (
+                                          // eslint-disable-next-line react/jsx-key
                                           <li className="marquee__item">
                                              {comment}
                                           </li>
@@ -74,6 +75,7 @@ export const Episode = ({ stateEpisode = true, title, comments, users }) => {
                                     })}
                                     {comments.map((comment) => {
                                        return (
+                                          // eslint-disable-next-line react/jsx-key
                                           <li className="marquee__item">
                                              {comment}
                                           </li>
@@ -81,6 +83,7 @@ export const Episode = ({ stateEpisode = true, title, comments, users }) => {
                                     })}
                                     {comments.map((comment) => {
                                        return (
+                                          // eslint-disable-next-line react/jsx-key
                                           <li className="marquee__item">
                                              {comment}
                                           </li>
