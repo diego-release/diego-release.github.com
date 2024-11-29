@@ -36,7 +36,7 @@
 .marquee__content {
    display: flex;
    list-style: none;
-   animation: scrolling 100s linear infinite;
+   animation: scrolling 20s linear infinite;
 }
 
 @keyframes scrolling {
@@ -53,7 +53,7 @@
 }
 
 .episode-footer {
-   background-image: url("./assets/background/footer-cassette.png");
+   background-image: url("/assets/background/footer-cassette.png");
    width: 276px;
    height: 48px;
    background-position: center;
